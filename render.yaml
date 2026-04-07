@@ -16,4 +16,4 @@ services:
     startCommand: npm start
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        value: https://neuro-tracker-backend.onrender.com
+        value: https://neuro-tracker-backend.onrender.com/api
