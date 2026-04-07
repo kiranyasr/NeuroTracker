@@ -96,5 +96,5 @@ How to Run:
 3. Open in browser:
    http://localhost:3000
 
-Conclusion:
+Conclusion:git push -u origin master
 Neuro Tracker is a complete full-stack productivity application that combines task management, habit tracking, scheduling, analytics, and reporting in one web-based system. It is built with a modern frontend and backend stack and structured in a way that supports future improvements and scalability.
