@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: neuro-tracker-backend
+    runtime: python-3.12
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 1 app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+
+  - type: web
+    name: neuro-tracker-frontend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://neuro-tracker-backend.onrender.com
