@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Neuro Tracker: Backend",
+      "type": "shell",
+      "command": "npm run backend",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "neuro-tracker"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Neuro Tracker: Frontend",
+      "type": "shell",
+      "command": "npm run frontend",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "neuro-tracker"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Neuro Tracker: Run All",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Neuro Tracker: Backend",
+        "Neuro Tracker: Frontend"
+      ]
+    }
+  ]
+}

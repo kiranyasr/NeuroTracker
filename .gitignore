@@ -1,0 +1,4 @@
+.next
+node_modules
+backend/workflow_tracker.db
+backend/__pycache__

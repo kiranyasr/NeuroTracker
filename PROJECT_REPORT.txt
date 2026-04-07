@@ -1,0 +1,100 @@
+Neuro Tracker - Project Summary
+
+Project Title:
+Neuro Tracker
+
+Overview:
+Neuro Tracker is a full-stack personal productivity and workflow management web application designed to help a single user manage tasks, habits, meetings, and daily schedules in one centralized platform. The application combines planning, scheduling, tracking, analytics, and reporting into one integrated system.
+
+Purpose:
+The main purpose of the application is to improve personal productivity by providing a structured way to:
+- manage tasks
+- track habits
+- schedule daily activities
+- monitor progress
+- review performance through analytics and reports
+
+Technology Stack:
+- Frontend: React, Next.js, TypeScript
+- Backend: Flask
+- Database: SQLite
+- Styling: Custom CSS
+- Communication: REST API integration between frontend and backend
+
+Core Features:
+- Dashboard with overview metrics
+- Task, habit, and meeting management
+- Kanban board with drag and drop
+- Calendar-based schedule view
+- Table/list view for workflow items
+- Analytics with productivity insights
+- Daily, weekly, and monthly reports
+- Modal forms for create and edit actions
+- Responsive modern UI
+
+Pages in the Application:
+1. Dashboard
+   Shows total items, completed items, pending items, overdue items, today's schedule, recent activity, and visual summaries.
+
+2. Tasks
+   Includes a Kanban board and a table view for managing workflow items such as tasks, habits, and meetings.
+
+3. Schedule
+   Displays a calendar view for date-based planning and lets users inspect all scheduled items for a selected day.
+
+4. Analytics
+   Shows task distribution, completion rate, productivity score, and weekly progress insights.
+
+5. Reports
+   Provides separate daily, weekly, and monthly summary cards with completion and performance information.
+
+Data Model:
+Each workflow item supports:
+- title
+- description
+- item type
+- priority
+- category
+- status
+- scheduled date and time
+- duration
+- repeat rule
+- notes
+
+Backend Responsibilities:
+- Create, read, update, and delete workflow items
+- Provide dashboard data
+- Provide analytics data
+- Generate daily, weekly, and monthly reports
+- Store data in SQLite
+- Handle scheduling-related logic
+
+Frontend Responsibilities:
+- Display all pages and UI components
+- Fetch and render API data
+- Support drag-and-drop workflow updates
+- Show calendar, cards, reports, and analytics
+- Provide responsive user interaction
+
+Project Structure:
+- app/page.tsx -> Dashboard page entry
+- app/tasks/page.tsx -> Tasks page
+- app/schedule/page.tsx -> Schedule page
+- app/analytics/page.tsx -> Analytics page
+- app/reports/page.tsx -> Reports page
+- app/neuro-tracker.tsx -> Main shared application UI
+- app/neuro-tracker.css -> Main styling file
+- backend/app.py -> Flask backend
+
+How to Run:
+1. Start backend:
+   npm run backend
+
+2. Start frontend:
+   npm run frontend
+
+3. Open in browser:
+   http://localhost:3000
+
+Conclusion:
+Neuro Tracker is a complete full-stack productivity application that combines task management, habit tracking, scheduling, analytics, and reporting in one web-based system. It is built with a modern frontend and backend stack and structured in a way that supports future improvements and scalability.
