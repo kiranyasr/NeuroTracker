@@ -154,6 +154,11 @@ def health():
     return jsonify({"status": "ok"})
 
 
+@app.route("/")
+def index():
+    return jsonify({"status": "ok", "message": "Neuro Tracker backend is running"})
+
+
 @app.route("/api/tasks")
 def get_tasks():
     connection = get_db()
