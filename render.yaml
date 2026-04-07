@@ -1,7 +1,7 @@
 services:
   - type: web
     name: neuro-tracker-backend
-    runtime: python-3.12
+    runtime: python-3.11
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn -w 1 app:app
